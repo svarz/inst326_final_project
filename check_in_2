@@ -1,0 +1,46 @@
+import pandas as pd
+
+df = pd.read_csv("hockey_db.csv")
+
+
+def HitsVsPIM(player) :
+    # Hits vs. Penalty Infraction Minutes (PIM)
+    #Driver: Done as Group
+    
+    tempdf = df
+    print("Hits: ", tempdf["HIT"], "Penalty Minutes: ", tempdf["PIM"])
+
+
+def TOIvsPTS(player) :
+    # Time on Ice (TOI) vs. Points
+    #Driver: David
+    
+    tempdf = df
+    pts_per_min = tempdf["PTS"]/tempdf["TOI"]        
+    print("Total Time on Ice: ", tempdf["TOI"], "Total Points: ", tempdf["PTS"])
+
+
+def PosVsShots(player) :
+   # Position (X/Y) vs. Shots
+   #Driver: Terrell
+   
+    tempdf = df
+    print("Positions: " , tempdf["Pos"] , "Shots on Goal: " , tempdf["S"])
+    
+    
+def HitsVsGoals(player) :
+    # Hits vs. Goals
+    # Driver: Spencer
+    
+    tempdf = df
+    ratio = (tempdf["HIT"]/tempdf["G"])        
+    print("Hits: ", tempdf["HIT"], "Goals: ", tempdf["G"])
+    
+    
+def AgeVsHits(player) :
+    # Age vs. Hits
+    #Driver: Mahamud
+    
+    
+    
+    
