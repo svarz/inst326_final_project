@@ -41,6 +41,5 @@ def AgeVsHits(player) :
     # Age vs. Hits
     #Driver: Mahamud
     
-    
-    
-    
+    tempdf = df
+    print("Age: " , tempdf["Age"] , "HIT: " , tempdf["HIT"])
